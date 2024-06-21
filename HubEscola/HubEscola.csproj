@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Src\Modules\Alunos\Repositories\**" />
+    <Compile Remove="Src\Modules\Aula\**" />
+    <Compile Remove="Src\Modules\Curso\**" />
+    <Compile Remove="Src\Shared\Orm\**" />
+    <Content Remove="Src\Modules\Alunos\Repositories\**" />
+    <Content Remove="Src\Modules\Aula\**" />
+    <Content Remove="Src\Modules\Curso\**" />
+    <Content Remove="Src\Shared\Orm\**" />
+    <EmbeddedResource Remove="Src\Modules\Alunos\Repositories\**" />
+    <EmbeddedResource Remove="Src\Modules\Aula\**" />
+    <EmbeddedResource Remove="Src\Modules\Curso\**" />
+    <EmbeddedResource Remove="Src\Shared\Orm\**" />
+    <None Remove="Src\Modules\Alunos\Repositories\**" />
+    <None Remove="Src\Modules\Aula\**" />
+    <None Remove="Src\Modules\Curso\**" />
+    <None Remove="Src\Shared\Orm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerPlatform.Dataverse.Client" Version="1.1.22" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+</Project>
